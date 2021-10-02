@@ -10,6 +10,8 @@ Many related to RedDogReversal (RDR)  (See [Scott Redler](https://twitter.com/Re
 
 # PriorDayLevelWithRDR
 
+[thinkscript](https://tos.mx/GgiDSsR)
+
 This will show a prior day marker, such as low, high, close.   It can also bubble and alert you for a RedDogReversal on that marker.  You can combine all 3 for RDR Buy and RDR Sell
 
 <img width="842" alt="PriorDayLevelWithRdrConfig" src="https://user-images.githubusercontent.com/708959/135729297-4333cd93-613c-4bca-9fc4-72c03ad6438d.png">
@@ -17,11 +19,15 @@ This will show a prior day marker, such as low, high, close.   It can also bubbl
 
 # RedDogReversal
 
+[Thinkscript](https://tos.mx/hLFjcVl)
+
 This combines just the RedDogReversal Buy/Sell in a single script.  All you need to do is add it and get alerts and bubbles for RDR sell/buy
 
 <img width="854" alt="RedDogReversalConfig" src="https://user-images.githubusercontent.com/708959/135729273-77f8e84c-75f7-4f27-9c7e-01c882e85373.png">
 
 # MovAvgExponentialVariablePeriod
+
+[thinkscript](https://tos.mx/Qinrit9)
 
 Will show daily EMA on intraday chart so you can trade against it.
 
