@@ -22,3 +22,4 @@ This combines just the RedDogReversal Buy/Sell in a single script.  All you need
 
 Will show daily EMA on intraday chart so you can trade against it.
 
+<img width="469" alt="Screen Shot 2021-10-02 at 1 57 34 PM" src="https://user-images.githubusercontent.com/708959/135729013-70d7c879-c34e-47c3-975a-55c7b03f01e9.png">
