@@ -12,6 +12,7 @@ Many related to RedDogReversal (RDR)  (See [Scott Redler](https://twitter.com/Re
 
 This will show a prior day marker, such as low, high, close.   It can also bubble and alert you for a RedDogReversal on that marker.  You can combine all 3 for RDR Buy and RDR Sell
 
+<img width="842" alt="PriorDayLevelWithRdrConfig" src="https://user-images.githubusercontent.com/708959/135729297-4333cd93-613c-4bca-9fc4-72c03ad6438d.png">
 
 
 # RedDogReversal
