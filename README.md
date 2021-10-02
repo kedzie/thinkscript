@@ -4,7 +4,7 @@ TOS Thinkscripts
 
 Many related to RedDogReversal (RDR)  (See Scott Redler @ T3 Live)
 
-#PriorDayLevelWithRDR
+# PriorDayLevelWithRDR
 
 This will show a prior day marker, such as low, high, close.   It can also bubble and alert you for a RedDogReversal on that marker.  You can combine all 3 for RDR Buy and RDR Sell
 
