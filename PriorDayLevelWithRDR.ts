@@ -9,6 +9,7 @@
 
 input marker = { default close, high, low };
 input alertCrosses = no;
+input alertRDR = no;
 
 def beforeStart = GetTime() < RegularTradingStart(GetYYYYMMDD());
 def afterEnd = GetTime() > RegularTradingEnd(GetYYYYMMDD());
@@ -68,8 +69,6 @@ PrevDayPlot.SetDefaultColor(GetColor(9));
 PrevDayPlot.SetPaintingStrategy(PaintingStrategy.LINE);
 PrevDayPlot.SetStyle(Curve.SHORT_DASH);
 PrevDayPlot.SetLineWeight(2);
-Alert(alertCrosses and close crosses above PrevDay, "Crossed above previous " + marker, Alert.BAR, Sound.Ding);
-Alert(alertCrosses and close crosses below PrevDay, "Crossed below previous " + marker, Alert.BAR, Sound.Ding);
 
 #
 # Debug Plots (useful in lower subgraph)
@@ -78,5 +77,8 @@ Alert(alertCrosses and close crosses below PrevDay, "Crossed below previous " + 
 # debug.Hide();
 # debug.SetDefaultColor(GetColor(1));
 
-Alert(rdrState == rdrState.rdr AND rdrState[1] != rdrState.rdr, 
+Alert(alertCrosses and close crosses above PrevDay, "Crossed above previous " + marker, Alert.BAR, Sound.Ding);
+Alert(alertCrosses and close crosses below PrevDay, "Crossed below previous " + marker, Alert.BAR, Sound.Ding);
+
+Alert(alertRDR AND rdrState == rdrState.rdr AND rdrState[1] != rdrState.rdr, 
     "RDR " + IF marker == marker.low THEN "Buy" ELSE "Sell", Alert.BAR, Sound.Ring);
