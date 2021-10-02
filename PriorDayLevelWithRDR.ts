@@ -25,7 +25,6 @@ switch (marker) {
 
 def rdrState = { default closed, below, above, crossed_below, crossed_above, rdr };
 
-
 if afterEnd or beforeStart {
     rdrState = rdrState.closed;
 } else if close > PrevDay {
@@ -69,13 +68,15 @@ PrevDayPlot.SetDefaultColor(GetColor(9));
 PrevDayPlot.SetPaintingStrategy(PaintingStrategy.LINE);
 PrevDayPlot.SetStyle(Curve.SHORT_DASH);
 PrevDayPlot.SetLineWeight(2);
-
-plot debug = rdrState;
-debug.Hide();
-debug.SetDefaultColor(GetColor(1));
-
 Alert(alertCrosses and close crosses above PrevDay, "Crossed above previous " + marker, Alert.BAR, Sound.Ding);
 Alert(alertCrosses and close crosses below PrevDay, "Crossed below previous " + marker, Alert.BAR, Sound.Ding);
+
+#
+# Debug Plots (useful in lower subgraph)
+#
+# plot debug = rdrState;
+# debug.Hide();
+# debug.SetDefaultColor(GetColor(1));
 
 Alert(rdrState == rdrState.rdr AND rdrState[1] != rdrState.rdr, 
     "RDR " + IF marker == marker.low THEN "Buy" ELSE "Sell", Alert.BAR, Sound.Ring);

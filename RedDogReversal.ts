@@ -102,9 +102,10 @@ AddChartBubble(rdrState == rdrState.rdr_sell AND rdrState[1] != rdrState.rdr_sel
 Alert(alert AND rdrState == rdrState.rdr_buy AND rdrState[1] != rdrState.rdr_buy, "RDR Buy", Alert.BAR, Sound.Ring);
 Alert(alert AND rdrState == rdrState.rdr_sell AND rdrState[1] != rdrState.rdr_sell, "RDR Sell", Alert.BAR, Sound.Ring);
 
+
+# 
+# Debug plot (useful in lower subgraph)
 #
-# plots
-#
-plot debug = rdrState;
-debug.Hide();
-debug.SetDefaultColor(GetColor(1));
+# plot debug = rdrState;
+# debug.Hide();
+# debug.SetDefaultColor(GetColor(1));
