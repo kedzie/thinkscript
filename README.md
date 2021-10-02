@@ -2,7 +2,7 @@
 
 TOS Thinkscripts
 
-Many related to RedDogReversal (RDR)  (See Scott Redler @ [T3 Live](http://www.t3live.com)
+Many related to RedDogReversal (RDR)  (See [Scott Redler](https://twitter.com/RedDogT3) @ [T3 Live](http://www.t3live.com)
 
 <img width="923" alt="Screen Shot 2021-10-02 at 1 17 08 PM" src="https://user-images.githubusercontent.com/708959/135728062-6aad7cbe-f1c2-4809-afb1-324a778dbd41.png">
 
