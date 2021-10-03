@@ -3,7 +3,8 @@
 #
 # VERSION HISTORY (sortable date and time (your local time is fine), and your initials
 # 20210923 - Created.
-# Displays prior day's low/high/close
+#
+# Displays prior day's low, high, or close
 # Alerts when levels are lost/reclaimed
 # Adds Bubbleand Alert on RDR Buy/Sell.  Thanks to Scott Redler @ T3Live
 

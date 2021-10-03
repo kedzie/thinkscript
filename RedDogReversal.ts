@@ -3,10 +3,12 @@
 #
 # VERSION HISTORY (sortable date and time (your local time is fine), and your initials
 # 20210923 - Created.
-# ...
-# Adds Bubbleand Alert on RDR Buy/Sell.  Thanks to Scott Redler @ T3Live
+# 
+# Adds Bubble and Alert on RDR Buy/Sell.  Thanks to Scott Redler @ T3Live
+
 declare hide_on_daily;
-input alert = no;
+input alertReversal = no;
+input alertCrosses = no;
 
 def beforeStart = GetTime() < RegularTradingStart(GetYYYYMMDD());
 def afterEnd = GetTime() > RegularTradingEnd(GetYYYYMMDD());
@@ -23,7 +25,7 @@ if afterEnd or beforeStart {
     case closed:
         rdrState = rdrState.above;
      case below: #NaN
-         rdrState = rdrState.above;
+         rdrState = rdrState.crossed_above_high;
     case above:
         rdrState =  rdrState.above;
     case inside:
@@ -33,7 +35,7 @@ if afterEnd or beforeStart {
     case crossed_above_low:
         rdrState = rdrState.crossed_above_high;
     case crossed_below_low: #NaN
-         rdrState = rdrState.above;
+         rdrState = rdrState.rdr_buy;
     case crossed_below_high:
         rdrState = rdrState.above;
     case rdr_sell:
@@ -48,11 +50,11 @@ if afterEnd or beforeStart {
     case below:
          rdrState = rdrState.below;
     case above:  #NaN
-        rdrState =  rdrState.below;
+        rdrState =  rdrState.crossed_below_low;
     case inside:
         rdrState = rdrState.crossed_below_low;
     case crossed_above_high:  #NaN
-        rdrState = rdrState.below;
+        rdrState = rdrState.rdr_sell;
     case crossed_above_low:
         rdrState = rdrState.below;
     case crossed_below_low:
@@ -89,6 +91,33 @@ if afterEnd or beforeStart {
     }
 }
 
+plot PrevDayLow = prevLow;
+PrevDayLow.SetDefaultColor(GetColor(6));
+PrevDayLow.SetPaintingStrategy(PaintingStrategy.LINE);
+PrevDayLow.SetStyle(Curve.SHORT_DASH);
+PrevDayLow.SetLineWeight(2);
+PrevDayLow.Hide();
+Alert(alertCrosses and close crosses above PrevDayLow, "Crossed above prior day low", Alert.BAR, Sound.Ding);
+Alert(alertCrosses and close crosses below PrevDayLow, "Crossed below prior day low", Alert.BAR, Sound.Ding);
+
+plot PrevDayClose = close(period="DAY")[1];
+PrevDayClose.SetDefaultColor(GetColor(9));
+PrevDayClose.SetPaintingStrategy(PaintingStrategy.LINE);
+PrevDayClose.SetStyle(Curve.SHORT_DASH);
+PrevDayClose.SetLineWeight(2);
+PrevDayClose.Hide();
+Alert(alertCrosses and close crosses above PrevDayClose, "Crossed above prior day close", Alert.BAR, Sound.Ding);
+Alert(alertCrosses and close crosses below PrevDayClose, "Crossed below prior day close", Alert.BAR, Sound.Ding);
+
+plot PrevDayHigh = prevHigh;
+PrevDayHigh.SetDefaultColor(GetColor(5));
+PrevDayHigh.SetPaintingStrategy(PaintingStrategy.LINE);
+PrevDayHigh.SetStyle(Curve.SHORT_DASH);
+PrevDayHigh.SetLineWeight(2);
+PrevDayHigh.Hide();
+Alert(alertCrosses and close crosses above PrevDayHigh, "Crossed above prior day high", Alert.BAR, Sound.Ding);
+Alert(alertCrosses and close crosses below PrevDayHigh, "Crossed below prior day high", Alert.BAR, Sound.Ding);
+
 #
 # Bubbles
 #
@@ -99,9 +128,8 @@ AddChartBubble(rdrState == rdrState.rdr_sell AND rdrState[1] != rdrState.rdr_sel
 #
 # Alerts
 #
-Alert(alert AND rdrState == rdrState.rdr_buy AND rdrState[1] != rdrState.rdr_buy, "RDR Buy", Alert.BAR, Sound.Ring);
-Alert(alert AND rdrState == rdrState.rdr_sell AND rdrState[1] != rdrState.rdr_sell, "RDR Sell", Alert.BAR, Sound.Ring);
-
+Alert(alertReversal AND rdrState == rdrState.rdr_buy AND rdrState[1] != rdrState.rdr_buy, "RDR Buy", Alert.BAR, Sound.Ring);
+Alert(alertReversal AND rdrState == rdrState.rdr_sell AND rdrState[1] != rdrState.rdr_sell, "RDR Sell", Alert.BAR, Sound.Ring);
 
 # 
 # Debug plot (useful in lower subgraph)
