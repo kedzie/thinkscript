@@ -4,9 +4,7 @@ TOS Thinkscripts
 
 Many related to RedDogReversal (RDR)  (See [Scott Redler](https://twitter.com/RedDogT3) @ [T3 Live](http://www.t3live.com)
 
-<img width="923" alt="Screen Shot 2021-10-02 at 1 17 08 PM" src="https://user-images.githubusercontent.com/708959/135728062-6aad7cbe-f1c2-4809-afb1-324a778dbd41.png">
-
-<img width="673" alt="Screen Shot 2021-10-02 at 1 17 01 PM" src="https://user-images.githubusercontent.com/708959/135728074-68d796f4-481a-4fe8-b165-c86679edf2df.png">
+<img width="544" alt="rdrbuy" src="https://user-images.githubusercontent.com/708959/135735951-41df2509-0984-49c8-9ec1-bd5f9c5455e5.png">
 
 # PriorDayLevelWithRDR
 
