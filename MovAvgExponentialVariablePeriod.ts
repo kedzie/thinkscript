@@ -12,6 +12,9 @@ input displace = 0;
 input showBreakoutSignals = no;
 input alertCrosses = no;
 
+def beforeStart = GetTime() < RegularTradingStart(GetYYYYMMDD());
+def afterEnd = GetTime() > RegularTradingEnd(GetYYYYMMDD());
+
 plot AvgExp = ExpAverage(close(GetSymbol(), period)[-displace], length);
 
 AvgExp.SetDefaultColor(GetColor(1));
@@ -25,5 +28,5 @@ UpSignal.SetPaintingStrategy(PaintingStrategy.BOOLEAN_ARROW_UP);
 DownSignal.SetDefaultColor(Color.DOWNTICK);
 DownSignal.SetPaintingStrategy(PaintingStrategy.BOOLEAN_ARROW_DOWN);
 
-Alert(alertCrosses and UpSignal, "Crossed Above EMA " + length, Alert.BAR, Sound.Ding);
-Alert(alertCrosses and DownSignal, "Crossed Below EMA " + length, Alert.BAR, Sound.Ding);
+Alert(alertCrosses and !beforeStart and !afterEnd and UpSignal, "Crossed Above EMA " + length, Alert.BAR, Sound.Ding);
+Alert(alertCrosses and !beforeStart and !afterEnd and DownSignal, "Crossed Below EMA " + length, Alert.BAR, Sound.Ding);

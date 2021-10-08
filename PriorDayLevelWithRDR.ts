@@ -78,8 +78,8 @@ PrevDayPlot.SetLineWeight(2);
 # debug.Hide();
 # debug.SetDefaultColor(GetColor(1));
 
-Alert(alertCrosses and close crosses above PrevDay, "Crossed above previous " + marker, Alert.BAR, Sound.Ding);
-Alert(alertCrosses and close crosses below PrevDay, "Crossed below previous " + marker, Alert.BAR, Sound.Ding);
+Alert(alertCrosses and !beforeStart and !afterEnd and close crosses above PrevDay, "Crossed above previous " + marker, Alert.BAR, Sound.Ding);
+Alert(alertCrosses and !beforeStart and !afterEnd and close crosses below PrevDay, "Crossed below previous " + marker, Alert.BAR, Sound.Ding);
 
 Alert(alertRDR AND rdrState == rdrState.rdr AND rdrState[1] != rdrState.rdr, 
     "RDR " + IF marker == marker.low THEN "Buy" ELSE "Sell", Alert.BAR, Sound.Ring);

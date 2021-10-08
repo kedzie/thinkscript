@@ -97,8 +97,8 @@ PrevDayLow.SetPaintingStrategy(PaintingStrategy.LINE);
 PrevDayLow.SetStyle(Curve.SHORT_DASH);
 PrevDayLow.SetLineWeight(2);
 PrevDayLow.Hide();
-Alert(alertCrosses and close crosses above PrevDayLow, "Crossed above prior day low", Alert.BAR, Sound.Ding);
-Alert(alertCrosses and close crosses below PrevDayLow, "Crossed below prior day low", Alert.BAR, Sound.Ding);
+Alert(alertCrosses and !beforeStart and !afterEnd and close crosses above PrevDayLow, "Crossed above prior day low", Alert.BAR, Sound.Ding);
+Alert(alertCrosses and !beforeStart and !afterEnd and close crosses below PrevDayLow, "Crossed below prior day low", Alert.BAR, Sound.Ding);
 
 plot PrevDayClose = close(period="DAY")[1];
 PrevDayClose.SetDefaultColor(GetColor(9));
@@ -106,8 +106,8 @@ PrevDayClose.SetPaintingStrategy(PaintingStrategy.LINE);
 PrevDayClose.SetStyle(Curve.SHORT_DASH);
 PrevDayClose.SetLineWeight(2);
 PrevDayClose.Hide();
-Alert(alertCrosses and close crosses above PrevDayClose, "Crossed above prior day close", Alert.BAR, Sound.Ding);
-Alert(alertCrosses and close crosses below PrevDayClose, "Crossed below prior day close", Alert.BAR, Sound.Ding);
+Alert(alertCrosses and !beforeStart and !afterEnd and close crosses above PrevDayClose, "Crossed above prior day close", Alert.BAR, Sound.Ding);
+Alert(alertCrosses and !beforeStart and !afterEnd and close crosses below PrevDayClose, "Crossed below prior day close", Alert.BAR, Sound.Ding);
 
 plot PrevDayHigh = prevHigh;
 PrevDayHigh.SetDefaultColor(GetColor(5));
@@ -115,8 +115,8 @@ PrevDayHigh.SetPaintingStrategy(PaintingStrategy.LINE);
 PrevDayHigh.SetStyle(Curve.SHORT_DASH);
 PrevDayHigh.SetLineWeight(2);
 PrevDayHigh.Hide();
-Alert(alertCrosses and close crosses above PrevDayHigh, "Crossed above prior day high", Alert.BAR, Sound.Ding);
-Alert(alertCrosses and close crosses below PrevDayHigh, "Crossed below prior day high", Alert.BAR, Sound.Ding);
+Alert(alertCrosses and !beforeStart and !afterEnd and close crosses above PrevDayHigh, "Crossed above prior day high", Alert.BAR, Sound.Ding);
+Alert(alertCrosses and !beforeStart and !afterEnd and close crosses below PrevDayHigh, "Crossed below prior day high", Alert.BAR, Sound.Ding);
 
 #
 # Bubbles
