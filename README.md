@@ -4,7 +4,7 @@ TOS Thinkscripts
 
 Many related to RedDogReversal (RDR)  (See [Scott Redler](https://twitter.com/RedDogT3) @ [T3 Live](http://www.t3live.com)
 
-<img width="544" alt="rdrbuy" src="rdrbuy.png">
+<img width="854" alt="rdrbuy" src="rdrbuy.png">
 
 ## RedDogReversal
 
