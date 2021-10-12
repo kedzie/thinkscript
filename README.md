@@ -1,4 +1,4 @@
-# thinkscript
+# Thinkscript
 
 TOS Thinkscripts
 
@@ -32,12 +32,12 @@ Will show daily EMA on intraday chart so you can trade against it.  Alerts on wh
 
 <img width="883" alt="MovAveConfig" src="MovAveConfig.png">
 
-# pine script (TradingView)
+# Pine script (TradingView)
 
 ## RedDogReversal pinescript
 
 [Add to TradingView](https://t.co/3aLSGQc52f?amp=1)
 
-This combines just the RedDogReversal Buy/Sell in a single script. All you need to do is add it and get alerts and bubbles for RDR sell/buy. Also has optional plots for prior day's high/low/close levels.  (Same as the thinkscript version above)
+This combines just the RedDogReversal Buy/Sell in a single script. All you need to do is add it and get alerts and bubbles for RDR sell/buy. Also has optional plots for prior day's high/low/close levels.  *(Same as the thinkscript version above)*
 
 <img width="544" alt="RedDogReversal-pinescript" src="RedDogReversal-pinescript.png">
