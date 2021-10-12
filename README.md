@@ -1,6 +1,6 @@
 # Trading Scripts
 
-Many related to RedDogReversal (RDR)  (See [Scott Redler](https://twitter.com/RedDogT3) @ [T3 Live](http://www.t3live.com)
+Many related to RedDogReversal (RDR)  (See [Scott Redler](https://twitter.com/RedDogT3) @ [T3 Live](http://www.t3live.com))
 
 1. TOS
 	1. [RedDogReversal](#RedDogReversal)
