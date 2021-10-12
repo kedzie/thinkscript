@@ -1,12 +1,21 @@
-# Thinkscript
+# Trading Scripts
 
-TOS Thinkscripts
+Many related to RedDogReversal (RDR)  (See [Scott Redler](https://twitter.com/RedDogT3) @ [T3 Live](http://www.t3live.com)
+
+1. TOS
+	1. [RedDogReversal](#RedDogReversal)
+	1. [PriorDayLevelWithRDR](#PriorDayLevelWithRDR)
+	1. [MovAvgExponentialVariablePeriod](#MovAvgExponentialVariablePeriod)
+2. TradingView
+	1. [RedDogReversal](RedDogReversal pinescript#RedDogReversal pinescript)
+
+## Thinkscript (ThinkOrSwim)
 
 Many related to RedDogReversal (RDR)  (See [Scott Redler](https://twitter.com/RedDogT3) @ [T3 Live](http://www.t3live.com)
 
 <img width="854" alt="rdrbuy" src="rdrbuy.png">
 
-## RedDogReversal
+### RedDogReversal
 
 [Add to TOS](https://tos.mx/hLFjcVl)
 
@@ -14,7 +23,7 @@ This combines just the RedDogReversal Buy/Sell in a single script.  All you need
 
 <img width="854" alt="RedDogReversalConfig" src="RedDogReversalConfig.png">
 
-## PriorDayLevelWithRDR
+### PriorDayLevelWithRDR
 
 [Add to TOS](https://tos.mx/GgiDSsR)
 
@@ -22,7 +31,7 @@ This will show a single prior day marker, such as low, high, close.   It can als
 
 <img width="842" alt="PriorDayLevelWithRdrConfig" src="PriorDayLevelWithRdrConfig.png">
 
-## MovAvgExponentialVariablePeriod
+### MovAvgExponentialVariablePeriod
 
 [Add to TOS](https://tos.mx/Qinrit9)
 
@@ -32,9 +41,9 @@ Will show daily EMA on intraday chart so you can trade against it.  Alerts on wh
 
 <img width="883" alt="MovAveConfig" src="MovAveConfig.png">
 
-# Pine script (TradingView)
+## Pine script (TradingView)
 
-## RedDogReversal pinescript
+### RedDogReversal pinescript
 
 [Add to TradingView](https://t.co/3aLSGQc52f?amp=1)
 
