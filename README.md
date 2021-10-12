@@ -7,7 +7,7 @@ Many related to RedDogReversal (RDR)  (See [Scott Redler](https://twitter.com/Re
 	1. [PriorDayLevelWithRDR](#PriorDayLevelWithRDR)
 	1. [MovAvgExponentialVariablePeriod](#MovAvgExponentialVariablePeriod)
 2. TradingView
-	1. [RedDogReversal](RedDogReversal pinescript#RedDogReversal pinescript)
+	1. [RedDogReversal](#RedDogReversal-pinescript)
 
 ## Thinkscript (ThinkOrSwim)
 
