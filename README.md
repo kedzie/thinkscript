@@ -36,7 +36,7 @@ Will show daily EMA on intraday chart so you can trade against it.  Alerts on wh
 
 ### RedDogReversal pinescript
 
-[Add to TradingView](https://t.co/3aLSGQc52f?amp=1)
+[Add to TradingView](https://www.tradingview.com/script/GyeTCzXP-Red-Dog-Reversal-Intraday/)
 
 This combines just the RedDogReversal Buy/Sell in a single script. All you need to do is add it and get alerts and bubbles for RDR sell/buy. Also has optional plots for prior day's high/low/close levels.  *(Same as the thinkscript version above)*
 

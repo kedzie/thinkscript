@@ -5,6 +5,7 @@
 //
 // VERSION HISTORY
 // 20210923 - Created. mk
+// 20211012 - fixed prior hlc
 // 
 // Adds Intraday Bubble and Alert on RDR Buy/Sell.  Thanks to Scott Redler @ T3Live
 //@version=5
@@ -17,9 +18,9 @@ t = time(timeframe.period, "0930-1600")
 
 isOpen = not na(t)
 
-prevClose = request.security(syminfo.ticker, 'D', close[1])
-prevHigh = request.security(syminfo.ticker, 'D', high[1])
-prevLow = request.security(syminfo.ticker, 'D', low[1])
+prevClose = request.security(syminfo.ticker, 'D', close[1], barmerge.gaps_off, barmerge.lookahead_on)
+prevHigh = request.security(syminfo.ticker, 'D', high[1], barmerge.gaps_off, barmerge.lookahead_on)
+prevLow = request.security(syminfo.ticker, 'D', low[1], barmerge.gaps_off, barmerge.lookahead_on)
 
 //enum definitions
 rdr_closed = 0
