@@ -18,9 +18,11 @@ t = time(timeframe.period, "0930-1600")
 
 isOpen = not na(t)
 
-prevClose = request.security(syminfo.ticker, 'D', close[1], barmerge.gaps_off, barmerge.lookahead_on)
-prevHigh = request.security(syminfo.ticker, 'D', high[1], barmerge.gaps_off, barmerge.lookahead_on)
-prevLow = request.security(syminfo.ticker, 'D', low[1], barmerge.gaps_off, barmerge.lookahead_on)
+indexHighTf = barstate.isrealtime ? 1 : 0
+indexCurrTf = barstate.isrealtime ? 0 : 1
+prevClose = request.security(syminfo.ticker, 'D', close[indexHighTf], barmerge.gaps_off, barmerge.lookahead_off)[indexCurrTf]
+prevHigh = request.security(syminfo.ticker, 'D', high[indexHighTf], barmerge.gaps_off, barmerge.lookahead_off)[indexCurrTf]
+prevLow = request.security(syminfo.ticker, 'D', low[indexHighTf], barmerge.gaps_off, barmerge.lookahead_off)[indexCurrTf]
 
 //enum definitions
 rdr_closed = 0
