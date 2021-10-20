@@ -18,7 +18,7 @@ Many related to RedDogReversal (RDR)  (See [Scott Redler](https://twitter.com/Re
 
 [Add to TOS](https://tos.mx/hLFjcVl)
 
-This combines just the RedDogReversal Buy/Sell in a single script.  All you need to do is add it and get alerts and bubbles for RDR sell/buy.  Also has optional plots for prior day's high/low/close levels.
+Alerts and bubbles for Red Dog Reversal (RDR) Buy/Sell on intraday chart.  Optionally plots prior day High/Low/Close and alerts on crosses of those prior levels.
 
 <img width="854" alt="RedDogReversal-config" src="RedDogReversal-config.png">
 
@@ -38,6 +38,6 @@ Will show daily EMA on intraday chart so you can trade against it.  Alerts on wh
 
 [Add to TradingView](https://www.tradingview.com/script/YjLdK0s0-Red-Dog-Reversal-Intraday/)
 
-This combines just the RedDogReversal Buy/Sell in a single script. All you need to do is add it and get alerts and bubbles for RDR sell/buy. Also has optional plots for prior day's high/low/close levels.  *(Same as the thinkscript version above)*
+Alerts and bubbles for Red Dog Reversal (RDR) Buy/Sell on intraday chart.  Optionally plots prior day High/Low/Close and alerts on crosses of those prior levels.  *(Same as the thinkscript version above)*
 
 <img width="544" alt="RedDogReversal-pinescript-screenshot" src="RedDogReversal-pinescript-screenshot2.png">
