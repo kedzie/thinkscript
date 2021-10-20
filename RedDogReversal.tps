@@ -106,6 +106,8 @@ if rdrState == rdr_sell and rdrState[1] != rdr_sell
 //Alerts
 if alertReversal and rdrState == rdr_buy and rdrState[1] != rdr_buy
     alert(str.format("RDR Buy {0}", syminfo.ticker), alert.freq_once_per_bar)
+if alertReversal and rdrState == rdr_sell and rdrState[1] != rdr_sell
+    alert(str.format("RDR Sell {0}", syminfo.ticker), alert.freq_once_per_bar)
 
 // Debug plot (useful in lower subgraph)
 //plot(rdrState, title="RDR State Machine")
