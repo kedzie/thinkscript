@@ -55,4 +55,4 @@ Alerts and bubbles for Red Dog Reversal (RDR) Buy/Sell on intraday chart.  Optio
 Add to chart and enable plots to show prior levels.  For alerts you must create an alert and choose RDR
 
 
-<img with="320" alt="RedDogReversal-pinescript-config-screenshot" src="screenshots/RedDogReversal-pinescript-config-screenshot.png">
+<img width="320" alt="RedDogReversal-pinescript-config-screenshot" src="screenshots/RedDogReversal-pinescript-config-screenshot.png">
