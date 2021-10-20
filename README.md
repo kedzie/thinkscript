@@ -12,15 +12,19 @@ Many related to RedDogReversal (RDR)  (See [Scott Redler](https://twitter.com/Re
 
 Many related to RedDogReversal (RDR)  (See [Scott Redler](https://twitter.com/RedDogT3) @ [T3 Live](http://www.t3live.com)
 
-<img width="854" alt="RedDogReversal-screenshot" src="RedDogReversal-screenshot.png">
-
 ### RedDogReversal
 
 [Add to TOS](https://tos.mx/hLFjcVl)
 
 Alerts and bubbles for Red Dog Reversal (RDR) Buy/Sell on intraday chart.  Optionally plots prior day High/Low/Close and alerts on crosses of those prior levels.
 
-<img width="854" alt="RedDogReversal-config" src="RedDogReversal-config.png">
+<img width="640" alt="RedDogReversal-screenshot" src="screenshots/RedDogReversal-screenshot.png">
+
+#### Configuration
+
+Add as Study on main chart.  Enable alerts on crossover of prior day HLC, and Reversals if desired.   For plots of prior levels you must enable each one as they are disabled by default.
+
+<img width="854" alt="RedDogReversal-config" src="screenshots/RedDogReversal-config.png">
 
 ### MovAvgExponentialVariablePeriod
 
@@ -28,9 +32,13 @@ Alerts and bubbles for Red Dog Reversal (RDR) Buy/Sell on intraday chart.  Optio
 
 Will show daily EMA on intraday chart so you can trade against it.  Alerts on when price crosses levels.
 
-<img width="469" alt="MovAvgExponentialVariablePeriod-screenshot" src="MovAvgExponentialVariablePeriod-screenshot.png">
+<img width="640" alt="MovAvgExponentialVariablePeriod-screenshot" src="screenshots/MovAvgExponentialVariablePeriod-screenshot.png">
 
-<img width="883" alt="MovAvgExponentialVariablePeriod-config" src="MovAvgExponentialVariablePeriod-config.png">
+#### Configuration
+
+Add as Study on main chart.  Set the period you want the ema for, i.e. 8 day, 21 day, 50 day.  
+
+<img width="883" alt="MovAvgExponentialVariablePeriod-config" src="screenshots/MovAvgExponentialVariablePeriod-config.png">
 
 ## Pine script (TradingView)
 
@@ -40,4 +48,11 @@ Will show daily EMA on intraday chart so you can trade against it.  Alerts on wh
 
 Alerts and bubbles for Red Dog Reversal (RDR) Buy/Sell on intraday chart.  Optionally plots prior day High/Low/Close and alerts on crosses of those prior levels.  *(Same as the thinkscript version above)*
 
-<img width="544" alt="RedDogReversal-pinescript-screenshot" src="RedDogReversal-pinescript-screenshot2.png">
+<img width="640" alt="RedDogReversal-pinescript-screenshot" src="screenshots/RedDogReversal-pinescript-screenshot2.png">
+
+#### Configuration
+
+Add to chart and enable plots to show prior levels.  For alerts you must create an alert and choose RDR
+
+
+<img alt="RedDogReversal-pinescript-config-screenshot" src="screenshots/RedDogReversal-pinescript-config-screenshot.png">
